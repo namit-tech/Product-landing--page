@@ -286,7 +286,7 @@ header #menu {
 .form {
     background: #cd031b;
     width: 90vw;
-    height: 75vh;
+    height: 100%;
     margin: 5%;
     border-radius: 20px;
     color: white;
@@ -819,4 +819,77 @@ footer {
         justify-content: center;
         margin-left: -10%;
     }
+}
+@media screen and (max-width:576px) {
+    .main-data h1{
+        margin-top: 15%;
+    }
+    .shoe-img img {
+        width: 40vw;
+        margin: 55% 10%;
+        margin-bottom: 20%;
+    }
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .about-img img {
+        width: 50vw;
+        margin-left: 20%;
+        margin-bottom: 0%;
+    }
+
+    .about-data h1 {
+        font-size: 1.2rem;
+    }
+
+    .about-data p ul li {
+        font-size: 0.9rem;
+    }
+    .breathable {
+        left: 9%;
+    }
+
+    .main-features .feature-img-info .features::before {
+        margin-top: 10%;
+    }
+
+    .feature-data h1 {
+        font-size: 1.8rem;
+    }
+
+    .feature-data p {
+        font-size: 0.9rem;
+    }
+
+    .features {
+        display: grid;
+    }
+
+    .features img {
+        margin-top: 9%;
+        width: 37vw;
+    }
+
+    .features h4 {
+        margin-top: 10%;
+    }
+
+    .features p {
+        font-size: 0.8rem;
+    }
+    .form {
+        background: #cd031b;
+        width: 90vw;
+        height: 100%;
+        margin: 5%;
+        border-radius: 20px;
+        color: white;
+        padding: 20px;
+    }
+
+
+
 }
