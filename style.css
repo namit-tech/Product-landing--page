@@ -1,0 +1,822 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    z-index: 1000;
+    padding: 2rem 7%;
+    background: #cd031b;
+}
+
+header .logo {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .navbar ul li a {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+
+}
+
+header .navbar ul li a.active::before,
+header .navbar ul li a:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+header #menu {
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.shoe-img img {
+    width: 25vw;
+    margin-top: 15%;
+    margin-bottom: 25%;
+    animation: productani01 5s linear infinite;
+}
+
+@keyframes productani01 {
+
+    0%,
+    100% {
+        transform: translateY(15px);
+    }
+
+    50% {
+        transform: translateY(-1px);
+    }
+
+}
+
+.main-section-1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 6%;
+    background-color: #cd031b;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.main-section-1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    background: url("/assets/shape-bg.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
+
+.main-data {
+    display: grid;
+    gap: 15%;
+    align-self: center;
+}
+
+.main-data h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.main-data p {
+    font-size: 1rem;
+}
+
+.btn-main {
+    width: 10vw;
+    padding: 2%;
+    border-radius: 10px;
+    border: none;
+    color: #cd031b;
+}
+
+.btn-main:hover {
+    border: 1px solid white;
+    background-color: #cd031b;
+    color: white;
+}
+
+.about-section {
+    display: flex;
+    background-color: #fefefe;
+    justify-content: space-around;
+}
+
+.about-img img {
+    width: 25vw;
+    height: 40vh;
+}
+
+.about-data {
+    display: grid;
+    gap: 10%;
+    align-self: center;
+}
+
+.about-data h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #cd031b;
+}
+
+.about-data p {
+    color: gray;
+}
+
+.about-data ul li {
+    display: flex;
+    gap: 2%;
+    color: gray;
+}
+
+.about-data ul i {
+    color: #cd031b;
+}
+
+.feature-data {
+    text-align: center;
+}
+
+.feature-data h1 {
+    font-size: 2.5rem;
+    color: #cd031b;
+    font-weight: bolder;
+}
+
+.feature-data p {
+    color: gray;
+}
+
+.main-features .feature-img-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+
+}
+
+.feature-img-info .features {
+    z-index: 0;
+    position: relative;
+}
+
+.main-features .feature-img-info .features::before {
+    content: '';
+    position: absolute;
+    background-color: #cd031b;
+    height: 9.5rem;
+    width: 10rem;
+    z-index: -1;
+    box-shadow: 0 0 0 1rem rgba(255, 0, 0, 0.1);
+}
+
+.features img {
+    width: 10vw;
+    padding: 40px;
+}
+
+.features h4 {
+    font-size: 1.5rem;
+    position: relative;
+    margin-top: 10%;
+    left: 8%;
+
+}
+
+.features p {
+    position: relative;
+    color: gray;
+    top: 15%;
+    left: -10%;
+}
+
+.product-heading h1 {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #cd031b;
+}
+
+.product-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.Product {
+    width: 20%;
+    margin: 15px;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(255, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+
+}
+
+.Product img {
+    width: 15vw;
+    height: 35vh;
+}
+
+.Product p {
+    font-weight: bold;
+    padding: 10%;
+}
+
+.Product span {
+    color: gray;
+}
+
+.slider {
+    text-align: center;
+    border-radius: 50px;
+}
+
+.slider i {
+    background-color: #cd031b;
+    color: white;
+    padding: 8px;
+    border-radius: 100%;
+}
+
+.form {
+    background: #cd031b;
+    width: 90vw;
+    height: 75vh;
+    margin: 5%;
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+}
+
+.form h1 {
+    text-align: center;
+
+}
+
+.form form {
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 90%;
+    max-width: 90%;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+
+form input,
+form textarea {
+    margin: 1% 0;
+    padding: 1%;
+    background-color: whitesmoke;
+    font-size: 1.1rem;
+    width: 100%;
+    outline: none;
+    border: 2px solid #fafafa;
+    background: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: .7rem 3.5rem;
+    border-radius: 5rem;
+    color: #cd031b;
+    margin-top: 1rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    width: 10vw;
+    left: 45%;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0%;
+    background: #333;
+    z-index: -1;
+    transition: .2s linear;
+}
+
+.btn:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+.faq {
+    text-align: center;
+}
+
+.faq-head {
+    font-size: 2rem;
+    color: #cd031b;
+}
+
+.flex-faq {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+    flex-wrap: wrap;
+}
+
+.flex-faq p {
+    color: gray;
+}
+
+.faq-1 {
+    display: grid;
+    gap: 20%;
+}
+
+.faq-2 {
+    display: grid;
+    gap: 20%;
+}
+
+footer {
+    background-color: #cd031b;
+    width: 100%;
+    height: 50vh;
+    margin-top: 10%;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    color: white;
+}
+
+.social-media i {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.footer-logo {
+    font-size: 2rem;
+}
+
+@media screen and (max-width:1400px) {
+
+    .shoe-img img {
+        margin-bottom: 10%;
+    }
+
+    .features {
+        margin-top: 4%;
+        margin-left: 4%;
+    }
+
+    .features img {
+        width: 12vw;
+        margin-bottom: 10%;
+    }
+
+    .features h4 {
+        margin-top: 10%;
+    }
+
+    .features p {
+        font-size: 0.9rem;
+    }
+
+    .Product {
+        width: 25%;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .shoe-img img {
+        margin-bottom: 35%;
+    }
+
+    .about-data {
+        gap: 10%;
+    }
+
+    .about-data h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-data p {
+        font-size: 0.9rem;
+    }
+
+    .comfort {
+        left: 5%;
+    }
+
+    .breathable {
+        left: 5%;
+    }
+
+    .durable {
+        left: 2%;
+    }
+
+    .stability {
+        left: -1%;
+    }
+
+    .features img {
+        width: 17vw;
+    }
+
+    .features h4 {
+        margin-top: 10%;
+    }
+
+    .features p {
+        font-size: 0.9rem;
+    }
+
+    .Product {
+        width: 30%;
+    }
+
+
+    .flex-faq p {
+        font-size: 0.9rem;
+    }
+
+    .faq-1 {
+        gap: 10%;
+    }
+
+    .faq-2 {
+        gap: 10%;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header #menu {
+        display: block;
+    }
+
+    header .navbar {
+        position: fixed;
+        top: -120%;
+        left: 0;
+        width: 100%;
+        background: #cd031b;
+        opacity: 0;
+    }
+
+    header .navbar ul {
+        padding: 2rem 0;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    header .navbar ul li a {
+        font-size: 2rem;
+        color: white;
+        display: block;
+        margin: 1rem 0;
+    }
+
+    header .navbar ul li a::before {
+        background: white;
+    }
+
+    .fa-times {
+        transform: rotate(180deg);
+    }
+
+    header .navbar.nav-toggle {
+        top: 7.4rem;
+        opacity: 1;
+    }
+
+    .main-section-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-main {
+        margin-left: 10%;
+        width: 50vw;
+        padding: 2%;
+    }
+
+    .main-data {
+        display: grid;
+        gap: 35%;
+        align-self: center;
+        margin-top: 20%;
+    }
+
+    .main-data h1 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
+
+    .main-data p {
+        font-size: 1.5rem;
+    }
+
+
+    .shoe-img img {
+        width: 40vw;
+        margin: 35% 10%;
+        margin-bottom: 15%;
+    }
+
+    .about-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-img img {
+        width: 50vw;
+        margin-left: 20%;
+        margin-bottom: 0%;
+    }
+
+    .breathable {
+        left: 9%;
+    }
+
+    .features {
+        display: grid;
+    }
+
+    .features img {
+        width: 22vw;
+    }
+
+    .features h4 {
+        margin-top: 5%;
+    }
+
+    .features p {
+        font-size: 0.9rem;
+    }
+
+    .Product {
+        width: 30%;
+    }
+
+    .flex-faq {
+        display: grid;
+        gap: 8%;
+    }
+
+    .flex-faq p {
+        font-size: 0.9rem;
+    }
+
+    .faq-1 {
+        gap: 5%;
+    }
+
+    .faq-2 {
+        gap: 5%;
+    }
+
+    .form {
+
+        width: 90vw;
+        height: 65vh;
+        margin: 5%;
+        color: white;
+        padding: 20px;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-left: -10%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    header #menu {
+        display: block;
+    }
+
+    header .navbar {
+        position: fixed;
+        top: -120%;
+        left: 0;
+        width: 100%;
+        background: #cd031b;
+        opacity: 0;
+    }
+
+    header .navbar ul {
+        padding: 2rem 0;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    header .navbar ul li a {
+        font-size: 2rem;
+        color: white;
+        display: block;
+        margin: 1rem 0;
+    }
+
+    header .navbar ul li a::before {
+        background: white;
+    }
+
+    .fa-times {
+        transform: rotate(180deg);
+    }
+
+    header .navbar.nav-toggle {
+        top: 7.4rem;
+        opacity: 1;
+    }
+
+    .main-section-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-main {
+        margin-left: 10%;
+        width: 50vw;
+        padding: 2%;
+    }
+
+    .main-data {
+        display: grid;
+        gap: 35%;
+        align-self: center;
+        margin-top: 20%;
+    }
+
+    .main-data h1 {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    .main-data p {
+        font-size: 1rem;
+    }
+
+
+    .shoe-img img {
+        width: 40vw;
+        margin: 40% 10%;
+        margin-bottom: 15%;
+    }
+
+    .about-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-img img {
+        width: 50vw;
+        margin-left: 20%;
+        margin-bottom: 0%;
+    }
+
+    .about-data h1 {
+        font-size: 1.2rem;
+    }
+
+    .about-data p ul li {
+        font-size: 0.9rem;
+    }
+
+    .breathable {
+        left: 9%;
+    }
+
+    .main-features .feature-img-info .features::before {
+        margin-top: 10%;
+    }
+
+    .feature-data h1 {
+        font-size: 1.8rem;
+    }
+
+    .feature-data p {
+        font-size: 0.9rem;
+    }
+
+    .features {
+        display: grid;
+    }
+
+    .features img {
+        margin-top: 5%;
+        width: 31vw;
+    }
+
+    .features h4 {
+        margin-top: 10%;
+    }
+
+    .features p {
+        font-size: 0.8rem;
+    }
+
+    .Product {
+        width: 50%;
+
+    }
+
+    .flex-faq {
+        display: grid;
+        gap: 5%;
+    }
+
+    .flex-faq p {
+        font-size: 0.9rem;
+    }
+
+    .faq-1 {
+        gap: 2%;
+    }
+
+    .faq-2 {
+        gap: 2%;
+    }
+
+    .form {
+
+        width: 90vw;
+        height: 65vh;
+        margin: 5%;
+        color: white;
+        padding: 20px;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-left: -10%;
+    }
+}
